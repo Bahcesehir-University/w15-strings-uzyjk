@@ -54,8 +54,8 @@ for(char c: text){
 string toUpperCase(const string& text) {
     // TODO: build a result string. For each char, if it is 'a'..'z',
     // convert it to uppercase by subtracting 32 (or use toupper).
-string result = text;
-    for(char c: result){
+    string result = text;
+    for(char& c: result){
         if(c >= 'a' && c<= 'z'){
             c = (char) (c-32);
         }
